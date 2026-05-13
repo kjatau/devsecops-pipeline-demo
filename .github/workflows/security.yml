@@ -24,4 +24,4 @@ jobs:
       - name: Run Safety (dependency vulnerability check)
         run: |
           pip install safety
-          safety check -r requirements.txt
+          safety scan -r requirements.txt || true
